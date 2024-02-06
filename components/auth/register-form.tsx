@@ -35,10 +35,10 @@ export const RegisterForm = () => {
       register(values).then((data) => {
         setError(data.error);
         setSuccess(data.success);
-        form.reset();
       });
     });
   };
+
   return (
     <CardWrapper
       headerLabel='Create an account'
